@@ -1,0 +1,186 @@
+:root {
+    --cor-primaria: #0A75BC;
+    --cor-secundaria:#fce029;
+    --cor-terciaria:#949699;
+    --cor-quaternaria:#000000;
+}
+
+*{ 
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    color: var(--cor-quaternaria);
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100% auto;
+    max-height: 100vh auto;
+    background: var(--cor-terciaria);
+    background-image: url(imagens/minion-fundo-site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100% auto;
+    height: 80px;
+    padding: 0 100px;
+}
+
+.cabecalho {
+    height: 70px; 
+}
+
+main {
+    display: flex;
+    width: auto;
+    height: 944px;
+}
+
+.section_input_text {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section_copy_text {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12px;
+}
+
+.text-area {
+    background: var(--cor-terciaria);    
+    border-radius: 24px;
+    color:var(--cor-quaternaria);
+    padding: 12px;
+    width: 100% auto;
+    height: 944px auto;
+    text-transform: lowercase;
+}
+
+.informacao h6 { 
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.12rem;
+    color: var(--cor-secundaria);
+    margin-top: 10px;
+}
+
+::placeholder {
+    font-size: 1.5rem;
+    color:var(--cor-secundaria)_;
+    .text-Area:focus {
+        outline: none;
+    } 
+}
+
+.mensagem { 
+    background-image:url(/imagens/gif-minon-comemorando.gif);         
+    background-color: var(--cor-terciaria);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    font-size: 1.12rem;
+    color: var(--cor-quaternaria);
+    width: 100% auto;
+    height: 100% auto;
+}
+
+.mensagem:focus {
+    outline: none;
+}
+
+.botoes {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.12rem;
+    display: flex;
+    margin-top: 18px;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.button {
+    width: 30%;
+}
+
+.btn-encriptar {
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-quaternaria);
+    border-radius: 20px;
+    font-size: 1.12rem;
+    cursor: pointer;
+    width: 338px;
+    height: 67px;
+}
+
+.btn-desencriptar {
+    background: var(--cor-terciaria);
+    border: 2px solid var(--cor-quaternaria);
+    border-radius: 20px;
+    font-size: 1.12rem;
+    cursor: pointer;
+    width: 338px;
+    height: 67px;
+}
+
+button {
+    background: var(--cor-primaria);
+    border: 2px solid var(--cor-quaternaria);
+    color: var(--cor-quaternaria);
+    border-radius: 20px;
+    font-size: 1.12rem;
+    cursor: pointer;
+    width: 338px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape {
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    color: var(--cor-primaria);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.12rem ;
+    height: 3.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 20px;
+    background-color: #0A75BC;
+}
+
+.rodape img {
+    width: 25%;
+}
+
+@media (max-width: 768) {
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+
+    .button {
+        width: 100%;
+    }
+}

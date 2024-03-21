@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="cabecalho" src="imagens/logo-minions.png" alt="logo dos minions">
+    </header>
+    <main>
+        <section class="section_input_text ">
+            <textarea class="text-area" cols="34" rows="15" placeholder="Digite seu texto"></textarea>
+            <div class="informacao">
+                <h6>Apenas letras minúsculas e sem acento.</h6>
+            </div>
+            <div class="botoes">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="section_copy_text">
+            <textarea class="mensagem" cols="34" rows="15"></textarea>
+            <button .class="btn-copiar" #id="copy-text" onclick="copyText()">Copiar</button>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Gisele N. P.Santos,2024.</p>
+        <a href="https://github.com/giselenovaes"><img src="imagens/logo.github.png">GitHub</a>
+        <a href="https://www.linkedin.com/in/gisele-novaes-psantos/"><img src="imagens/logo.linkedin.png">Linkedin</a> 
+        <img src="imagens/minions-rodape.gif" alt="Gif dos minions"></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
